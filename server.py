@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    client_name = request.headers.get('Host')
+    client_name = request.headers.get('Client-Name', 'Unknown')
     client_ip = request.remote_addr
     return f'Client Name: {client_name}\nClient IP Address: {client_ip}'
 
