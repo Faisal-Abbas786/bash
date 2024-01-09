@@ -9,7 +9,7 @@ def index():
     return f'Client Name: {client_name}\nClient IP Address: {client_ip}'
 
 if __name__ == '__main__':
-    host = '52.66.242.181'
+    host = '0.0.0.0'
     port = 5000
     print(f'Server running on http://{host}:{port}/')
     app.run(host=host, port=port)
