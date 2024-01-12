@@ -33,7 +33,7 @@ def send_message(client_socket, message):
 
 def chat_server(client_name, input_queue, server_ip):
     host = "0.0.0.0"
-    port = 12500
+    port = 8000
 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind((host, port))
@@ -132,7 +132,7 @@ def select_contact():
         return None
 
 def chat_client(peer_ip, client_name,client_email, input_queue, server_ip):
-    port = 12500
+    port = 8000
 
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
